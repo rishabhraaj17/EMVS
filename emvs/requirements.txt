@@ -1,0 +1,9 @@
+Requirements
+
+    ROS
+    Python2.7
+    pip install pyquaternion
+    pip install opencv-python
+    PCL (https://github.com/strawlab/python-pcl)
+
+Also Numpy and pyyaml.

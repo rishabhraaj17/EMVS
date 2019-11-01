@@ -1,0 +1,24 @@
+# Input parameters
+bag_filename : "/home/rishabh/Downloads/snake_t20.bag"
+event_topic : "/dvs/events"
+pose_topic : "/dvs/pose"
+camera_info_topic : "/dvs/camera_info"
+start_time : 5.0
+stop_time : 5.2
+
+# DSI parameters
+dim_x : 0  # if 0 uses the dimention of event camera
+dim_y : 0  # if 0 uses the dimention of event camera
+dim_z : 100  # <= 256
+fov_deg : 0.0  # if <10 will use FOV of event camera
+min_depth : 0.47  # in meters
+max_depth : 4.4  # in meters
+
+# Depth map parameters
+adaptive_thresholding_kernel_size : 5
+threshold_c : -10  # TODO: test values. smaller the values denser the reconstruction but also noisier
+median_filter_size : 5
+
+# Statistical Outlier Removal
+mean : 50
+std_threshold : 1.0
